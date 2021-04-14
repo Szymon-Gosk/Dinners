@@ -1,0 +1,8 @@
+plugins {
+    id 'idea'
+}
+
+allprojects {
+    group = 'gosk.szymon'
+    version = '1.0'
+}
