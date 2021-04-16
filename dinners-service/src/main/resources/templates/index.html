@@ -11,14 +11,72 @@
 <body>
 
 <header>
-
+    <div id="h-1">
+        <a th:href="@{/}">Dinners</a>
+    </div>
+    <div id="h-2">
+        <button class="h-button h-button-bordered">
+            Zaloguj
+        </button>
+        <button class="h-button h-button-filled">
+            Zarejestruj
+        </button>
+    </div>
 </header>
 
 <div class="horizontal-divider"></div>
 
 <div id="c-main">
     <nav>
-
+        <div class="nav-option" th:onclick="'location.href=\'/\''">
+            <div class="nav-option-corner"></div>
+            <div class="nav-option-icon" id="icon-1"></div>
+            <span>
+                Zamów
+            </span>
+        </div>
+        <div class="nav-option" th:onclick="'location.href=\'/\''">
+            <div class="nav-option-corner"></div>
+            <div class="nav-option-icon" id="icon-2"></div>
+            <span>
+                Twoje obiady
+            </span>
+        </div>
+        <div class="nav-option" th:onclick="'location.href=\'/\''">
+            <div class="nav-option-corner"></div>
+            <div class="nav-option-icon" id="icon-3"></div>
+            <span>
+                Menu
+            </span>
+        </div>
+        <div class="nav-option" th:onclick="'location.href=\'/\''">
+            <div class="nav-option-corner"></div>
+            <div class="nav-option-icon" id="icon-4"></div>
+            <span>
+                Kontakt
+            </span>
+        </div>
+        <div class="nav-option" th:onclick="'location.href=\'/\''">
+            <div class="nav-option-corner-2"></div>
+            <div class="nav-option-icon" id="icon-5"></div>
+            <span>
+                Obiady
+            </span>
+        </div>
+        <div class="nav-option" th:onclick="'location.href=\'/\''">
+            <div class="nav-option-corner-2"></div>
+            <div class="nav-option-icon" id="icon-6"></div>
+            <span>
+                Osoby
+            </span>
+        </div>
+        <div class="nav-option" th:onclick="'location.href=\'/\''">
+            <div class="nav-option-corner-2"></div>
+            <div class="nav-option-icon" id="icon-7"></div>
+            <span>
+                Panel
+            </span>
+        </div>
     </nav>
 
     <!-- @right-panel (rp) -->
