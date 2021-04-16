@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+Hey
+<ul th:each="person: ${persons}">
+    <li>
+       <span th:text="${person.name}"></span>
+        <span th:text="${person.surname}"></span>
+        <span th:text="${person.classType}"></span>
+        <span th:text="${person.classLevel}"></span>
+    </li>
+</ul>
+</body>
+</html>

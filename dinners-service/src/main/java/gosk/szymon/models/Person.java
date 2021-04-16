@@ -1,8 +1,10 @@
 package gosk.szymon.models;
 
+import gosk.szymon.models.validators.PersonAnnotation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.jetbrains.annotations.Contract;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,6 +17,7 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@PersonAnnotation
 public class Person {
 
     @Id
@@ -28,9 +31,17 @@ public class Person {
     private String surname;
 
     @Enumerated(EnumType.STRING)
-    ClassType classType;
+    private ClassType classType;
 
     @Enumerated(EnumType.STRING)
-    ClassLevel classLevel;
+    private ClassLevel classLevel;
+
+    @Contract(pure = true)
+    public Person(String name, String surname, ClassType classType, ClassLevel classLevel) {
+        this.name = name;
+        this.surname = surname;
+        this.classType = classType;
+        this.classLevel = classLevel;
+    }
 
 }

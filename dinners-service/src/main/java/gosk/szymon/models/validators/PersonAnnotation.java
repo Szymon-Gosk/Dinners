@@ -7,12 +7,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Constraint(validatedBy = DateValidator.class)
+@Constraint(validatedBy = PersonValidator.class)
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface DateAnnotation {
+public @interface PersonAnnotation {
 
-    String message() default "{error.date}";
+    String message() default "{error.person}";
 
     Class<?>[] groups() default { };
 
