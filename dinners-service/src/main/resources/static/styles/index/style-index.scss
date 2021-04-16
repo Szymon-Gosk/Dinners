@@ -1,0 +1,52 @@
+$font-base: 'Poppins', sans-serif;
+
+$color-shade: #f3f6f8;
+$color-dark: #c1c1c1;
+
+body {
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+header {
+
+  height: 10vh;
+
+}
+
+.horizontal-divider {
+
+  background: $color-shade;
+
+}
+
+#c-main {
+
+  height: 87vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+  nav {
+    height: 100%;
+    width: 20vw;
+    background: $color-shade;
+  }
+
+  #rp {
+    width: 80vw;
+  }
+
+}
+
+#c-footer {
+
+  background: $color-dark;
+  height: 3vh;
+
+}
